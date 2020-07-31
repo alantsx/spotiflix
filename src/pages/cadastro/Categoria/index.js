@@ -71,7 +71,7 @@ function CadastroCategoria() {
                     onChange={handleCategoria}
                 />
 
-                <Button>
+                <Button to="/">
                     Cadastrar
                 </Button>
             </form>
