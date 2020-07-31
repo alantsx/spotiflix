@@ -28,7 +28,7 @@ function CadastroCategoria() {
     }
 
     useEffect(() => {
-        const URL = 'http://localhost:8080/categorias';
+        const URL = 'https://alan-spotiflix.herokuapp.com/categorias';
         fetch(URL)
             .then(async (respostaDoServidor) => {
                 const resposta = await respostaDoServidor.json();
@@ -84,7 +84,6 @@ function CadastroCategoria() {
             
             <ul>
                 {categorias.map((categoria, index) => {
-                    console.log(categoria.nome);
                     return (
                         <li key={`${categoria}${index}`}>
                             {categoria.nome}
