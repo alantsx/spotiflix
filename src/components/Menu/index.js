@@ -10,7 +10,7 @@ const Menu = () => {
             <Link to="/">
                 <img className="Logo" src={Logo} alt="Spotiflix"/>
             </Link>
-            <Button className="ButtonLink" to="/cadastro/video">
+            <Button as={Link} className="ButtonLink" to="/cadastro/video">
                 Novo vídeo
             </Button>
         </nav>
